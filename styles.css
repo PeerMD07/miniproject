@@ -1,0 +1,91 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+body{
+  background: #0cb1f2;
+background: linear-gradient(90deg, rgba(12, 177, 242, 1) 0%, rgba(165, 87, 199, 1) 50%, rgba(95, 129, 231, 1) 83%, rgba(83, 137, 237, 1) 89%, rgba(237, 83, 142, 1) 100%);
+color: black;
+font-family: 'Samsung Sharp Sans', sans-serif;
+}
+
+form {
+width: 500px;
+margin: 0px auto;
+font-size:smaller;
+}
+fieldset {
+ border: 4px solid black;
+ border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+input[required]{
+border:3px solid red;
+border-radius: 8px; 
+}
+input[optional]{
+border:3px dashed rgb(1, 71, 1);
+border-radius: 8px; 
+}
+input:focus{
+    background-color: purple;
+}
+
+input + p {
+    display: none;
+}
+
+input:hover + p{
+display: inline;
+background-color: lightpink;
+font-size: 10px;
+font-family: monospace;
+font-weight: 100;
+}
+input:focus +p{
+    display: none;
+}
+
+input[type="radio"]:checked{
+height: 20px;
+width: 20px;
+}
+input[type="radio"]:checked+label{
+height: 20px;
+width: 20px;
+background-color: brown;
+border-radius: 20px;
+}
+select{
+    background-color: greenyellow;
+    border-radius: 20px;
+    font-family: 'Samsung Sharp Sans', sans-serif;
+}
+textarea{
+    resize: none;
+}
+input[type="email"]~img{
+    display: none;
+}
+input[type="email"]:focus:valid~img#correct{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="email"]:focus:invalid~img#wrong{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="number"]~img{
+    display: none;
+}
+input[type="number"]:focus:valid~img#correct{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="number"]:focus:invalid~img#wrong{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
